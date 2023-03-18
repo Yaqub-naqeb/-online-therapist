@@ -1,0 +1,120 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: #E5E5E5;
+    display: flex;
+    
+     align-items: center ;
+     justify-content: space-around;
+     height: 100vh;
+     
+}
+.rightPart{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transform: translateY(-5rem);
+}
+
+.sign-up-title {
+    font-size: 43px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 50px;
+  }
+
+.form{
+    width: 555px;
+    height: 430px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.firstName__LastName_input{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    gap: 40px;
+}
+.inp{
+    padding-left: 5px;
+    padding-right: 2rem;
+    padding-top: 0.7rem;
+    padding-bottom: .7rem;
+    border-radius: 5px;
+    border: 1px #9DAFBD solid;
+    outline: none;
+    
+}
+ .inp::placeholder{
+        color: #9DAFBD;
+      
+}
+
+
+.fullInp::placeholder{
+    color: #9DAFBD;
+  
+}
+.fullInp{
+    padding-left: 5px;
+    padding-right: 2rem;
+    padding-top: 0.7rem;
+    padding-bottom: .7rem;
+    border-radius: 5px;
+    border: 1px #9DAFBD solid;
+    outline: none;
+    width:80%;
+  
+}
+
+
+.sign-up-btn {
+    background-color: #2DD3E3;
+    color: #000;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  }
+  
+  .sign-up-btn:hover {
+    background-color: #29C0D6;
+  }
+  .login-btn {
+    background-color: transparent;
+    color: #2DD3E3;
+    border: 2px solid #2DD3E3;
+    padding: 15px 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  }
+  
+  .login-btn:hover {
+    background-color: #2DD3E3;
+    color: #fff;
+  }
+  .btns{
+    display: flex;
+    gap: 25px;
+    margin-top: 1rem;
+
+  }
