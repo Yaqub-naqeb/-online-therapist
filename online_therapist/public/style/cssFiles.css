@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+.body{
     background: #E5E5E5;
     display: flex;
     
@@ -12,6 +12,16 @@ body{
      justify-content: space-around;
      height: 100vh;
      
+}
+.Loginbody{
+  background: #E5E5E5;
+  display: flex;
+  flex-direction: row-reverse;
+  
+   align-items: center ;
+   justify-content: space-around;
+   height: 100vh;
+   
 }
 .rightPart{
     display: flex;
@@ -37,6 +47,18 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
+.loginForm{
+  width: 395px;
+  height: 330px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
 }
 
 

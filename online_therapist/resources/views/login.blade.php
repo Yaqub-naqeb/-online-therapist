@@ -8,12 +8,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="{{asset('style/cssFiles.css')}}">
 </head>
-<body class="body">
+<body class="Loginbody">
     
 {{-- left part --}}
 <div>
 
-    <img src="{{Url('images/SignupImage.png')}}" alt="">
+    <img src="{{Url('images/loginImage.png')}}" alt="">
     </div>
     
     {{-- Right part --}}
@@ -21,20 +21,12 @@
     
         <h1 class="sign-up-title">{{$title}}</h1>
         
-    <form action="" class="form">
-        {{-- first name and last name  --}}
-        <div class="firstName__LastName_input">
-            <input type="text" name="" id="" class="inp" placeholder="First Name">
-            <input type="text" name="" id="" class="inp" placeholder="Last Name">
-        </div>
+    <form action="" class="loginForm">
+      
         
         <input type="email" class="fullInp"  name="" id="" placeholder="Your Email">
-        <input type="email" class="fullInp" name="" id="" placeholder="Confirm Email">
-        {{-- password and confirm password --}}
-        <div class="firstName__LastName_input">
-            <input type="password" name="" class="inp" id="" placeholder="Password">
-            <input type="password" name="" class="inp" id="" placeholder="Confirm Password">
-        </div>
+        <input type="password" class="fullInp" name="" id="" placeholder="Password">
+      
         
         
         {{-- buttons --}}

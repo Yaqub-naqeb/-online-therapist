@@ -21,5 +21,11 @@ Route::get('/signup', function () {
         'title'=>'signup Now'
     ]);
 });
+// login
+Route::get('/login', function () {
+    return view('login',[
+        'title'=>'Login'
+    ]);
+});
 
 
