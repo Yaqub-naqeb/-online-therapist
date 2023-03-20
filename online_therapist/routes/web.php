@@ -27,5 +27,11 @@ Route::get('/login', function () {
         'title'=>'Login'
     ]);
 });
+// blogs
+Route::get('/blogs', function () {
+    return view('blogs',[
+        
+    ]);
+});
 
 
