@@ -33,5 +33,11 @@ Route::get('/blogs', function () {
         
     ]);
 });
+// After signup
+Route::get('/aftersignup', function () {
+    return view('aftersignup',[
+        
+    ]);
+});
 
 
