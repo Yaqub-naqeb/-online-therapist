@@ -2,10 +2,15 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    padding: 3rem 5rem;
 }
 .h1{
+    font-family: monospace;
+    font-size: 3rem;
 }
 .p{
+    font-family: monospace;
+
     line-height: 2;
 }
 .btn{
@@ -17,4 +22,9 @@
  cursor: pointer;
     border: none;
     border-radius: 5px;
+}
+.btn:hover{
+    background-color: #06c5d6;
+
+
 }
