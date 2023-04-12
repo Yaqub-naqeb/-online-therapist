@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background: #e5e5e5;
-    display: flex;
-
-    align-items: center;
-    justify-content: space-around;
-    height: 100vh;
-}
 .rightPart {
     display: flex;
     flex-direction: column;
@@ -107,4 +99,12 @@ body {
     display: flex;
     gap: 25px;
     margin-top: 1rem;
+}
+
+.con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 100px;
 }

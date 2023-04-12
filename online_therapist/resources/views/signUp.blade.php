@@ -12,9 +12,10 @@
 
 <body>
 
+
     @include('navbar')
     @yield('content')
-    {{-- left part --}}
+
     <div class="con">
         <div>
 
@@ -51,7 +52,7 @@
         </div>
     </div>
 
-    </div>
+
 
 
 </body>
