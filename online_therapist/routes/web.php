@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Blogs;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,8 +32,23 @@ Route::get('/login', function () {
 // blogs
 Route::get('/blogs', function () {
     return view('blogs',[
-        
+        "Blogs" => Blogs::all()
     ]);
+});
+
+Route::get('/blog/{id}', function ($id) {
+    return view('blog',[
+        "blog" =>Blogs::find($id)
+    ]);
+});
+
+Route::get('/check-db-connection', function () {
+    try {
+        DB::connection()->getPdo();
+        return "Database connection successful! {{}}" ;
+    } catch (\Exception $e) {
+        return "Database connection failed: " . $e->getMessage();
+    }
 });
 // After signup
 Route::get('/aftersignup', function () {
