@@ -39,5 +39,13 @@ Route::get('/aftersignup', function () {
         
     ]);
 });
+// After signup
+Route::get('/about', function () {
+    return view('about',[
+        'title'=>'WE ARE HEALING, NICE TO MEET YOU!',
+        'meet'=>'Meet the Team!'
+
+    ]);
+});
 
 
