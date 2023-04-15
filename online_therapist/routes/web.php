@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 Route::get('/signup', function () {
     return view('signup',[
@@ -39,7 +39,7 @@ Route::get('/aftersignup', function () {
         
     ]);
 });
-// After signup
+// about
 Route::get('/about', function () {
     return view('about',[
         'title'=>'WE ARE HEALING, NICE TO MEET YOU!',
