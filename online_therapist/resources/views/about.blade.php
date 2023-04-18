@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+@extends('layout')
+@section('content')
+<div class="bd">
     <link rel="stylesheet" href="{{asset('style/about.css')}}">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
-
-</head>
-<body >
- <div class="bd">
-
 
     <div class="wrap">
         <h1 class="title">{{$title}}</h1>
@@ -29,7 +20,7 @@
             {{-- writing --}}
             <div class="bottom ">
                 <p class="name">Yaqwb Naqib </p>
-                <p class="exp">FrontEnd Developer</p>
+                <p class="exp">Software developer</p>
             </div>
             </div>
     
@@ -38,13 +29,13 @@
     
             <div class="containar">
                 <div class="imcont">
-                    <img src="{{asset('images/Yaqwb.JPG')}}" class="image" alt="">
+                    <img src="{{asset('images/myimg.JPG')}}" class="image" alt="">
             
                 </div>
             {{-- writing --}}
             <div class="bottom ">
-                <p class="name">Yaqwb Naqib </p>
-                <p class="exp">FrontEnd Developer</p>
+                <p class="name">Abdulbari Qaisar</p>
+                <p class="exp">Software developer</p>
             </div>
             </div>
     
@@ -54,5 +45,6 @@
 
 
  </div>
-</body>
-</html>
+
+@endsection
+ 

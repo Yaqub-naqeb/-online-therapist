@@ -6,7 +6,7 @@
     <div class="body">
         <link rel="stylesheet" href="{{asset('style/blog.css')}}">
         <div >
-            <img class="image" src="{{Url('images/Rectangle 45.png')}}" alt="">
+            <img class="image" src="{{Url('images/Blogimg.png')}}" alt="">
         </div>
         {{-- writing --}}
         <div class="writing">
@@ -23,13 +23,7 @@
     <h2 class="h2">Sign up for The Healing blog</h2>
     <p class="p">A weekly, ad-free Blog that helps you stay in the know.</p>
     
-    <div class="inpImg">
-    
-        <input class="inp" type="text" name="" id="" placeholder="Enter your e-mail">
-    
-        <img class="send" src="{{Url('images/Send.png')}}" alt="">
-    
-    </div>
+  <x-subscribe></x-subscribe>
     
     </div>
     {{-- Recommend section --}}

@@ -2,14 +2,14 @@
     @extends('layout')
 
     @section('content')
-    <section>
-        <h1>Blogs</h1>
+    <section class="blogs">
+        <link rel="stylesheet" href="{{asset('style/blogs.css')}}">
+        <h1 class="blogs-title">Blogs</h1>
 
-        <div>
+        <div class="card-con">
           @foreach ($Blogs as $blog)
-          <h1>{{$blog["title"]}}</h1>
-          <p>{{$blog["tags"]}}</p>
-              <a href="/blog/{{$blog["id"]}}">see more</a>
+         
+              <x-blog-card :blog='$blog'></x-blog-card>
           @endforeach
            
         </div>
