@@ -37,9 +37,15 @@ Route::get('/blogs', function () {
 });
 
 Route::get('/blog/{id}', function ($id) {
-    return view('blog',[
-        "blog" =>Blogs::find($id)
-    ]);
+    $blog =  Blogs::find($id);
+    if($blog) {
+        return view('blog',[
+            "blog" =>$blog
+        ]);
+    } else{
+        abort("404");
+    }
+   
 });
 
 Route::get('/check-db-connection', function () {

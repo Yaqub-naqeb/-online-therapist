@@ -17,20 +17,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::factory(10)->create();
 
 
-
-        blogs::create( [
-           
-            'title' => 'Laravel Senior Developer', 
-            'desc' => 'laravel, javascript',         
-           
-        ]);
-
-        blogs::create( [
-          
-            'title' => 'react Senior Developer', 
-            'desc' => ' javascript',
-            
-          ]);
+Blogs::factory(6)->create();
 
           
         // \App\Models\User::factory()->create([
