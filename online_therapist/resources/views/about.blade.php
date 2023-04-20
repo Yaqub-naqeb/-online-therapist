@@ -10,6 +10,10 @@
 
 </head>
 <body >
+    {{-- @include('views/navbar'); --}}
+    @include('navbar')
+    @yield('content')
+
  <div class="bd">
 
 
