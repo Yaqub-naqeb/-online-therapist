@@ -1,0 +1,31 @@
+.footer {
+    min-height: 30vh;
+    padding: 0 100px 50px 100px;
+    background-color: #fee89e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sub-text {
+    font-size: 34px;
+}
+
+.sub-p {
+    font-size: 20px;
+    color: gray;
+}
+
+.footer-link {
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+    color: gray;
+}

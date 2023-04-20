@@ -1,6 +1,10 @@
 <?php
 
+
+use App\Models\Blogs;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,10 +32,17 @@ Route::get('/login', function () {
     ]);
 });
 // blogs
-Route::get('/blogs', function () {
-    return view('blogs',[
-        
-    ]);
+Route::get('/blogs', [BlogsController::class , 'index']);
+
+Route::get('/blog/{id}', [BlogsController::class , 'show']);
+
+Route::get('/check-db-connection', function () {
+    try {
+        DB::connection()->getPdo();
+        return "Database connection successful! {{}}" ;
+    } catch (\Exception $e) {
+        return "Database connection failed: " . $e->getMessage();
+    }
 });
 // After signup
 Route::get('/aftersignup', function () {
@@ -47,5 +58,3 @@ Route::get('/about', function () {
 
     ]);
 });
-
-

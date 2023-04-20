@@ -1,85 +1,80 @@
-.title{
-    font-family: 'Poppins';
+.title {
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 50px;
     line-height: 75px;
     /* identical to box height */
-    
-    
-    color: #000000;
-    }
-    .wrap{
-        display: flex;
-        flex-direction: column;
-        /* gap: 3rem; */
-    }
-.bd{
-    height: 100vh;
-    /* padding: 0 4rem 0 4rem; */
-display: flex;
-/* justify-content: center; */
-align-items: center;
-flex-direction: column;
-gap: 5rem;
 
+    color: #000000;
 }
-.image{
+.wrap {
+    display: flex;
+    flex-direction: column;
+    /* gap: 3rem; */
+}
+.bd {
+    height: 100vh;
+
+    /* padding: 0 4rem 0 4rem; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+.image-about {
     width: 178.39px;
     height: 178.39px;
 
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    border-bottom: solid #6BD24D 5px;
+    border-bottom: solid #6bd24d 5px;
     object-fit: cover;
 }
-.meet{
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 39px;
-/* or 134% */
+.meet {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 39px;
+    /* or 134% */
 
-
-color: #424A4F;
+    color: #424a4f;
 }
 
-.bottom{
-    background: #EAF8F9;
+.bottom {
+    background: #eaf8f9;
     flex-direction: column;
     display: flex;
-align-items: center;
-text-align: center;
+    align-items: center;
+    text-align: center;
 
-color: #424A4F;
-border-bottom-left-radius: 25px;
+    color: #424a4f;
+    border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    transform: translateY(-.4rem);
-
+    transform: translateY(-0.4rem);
 }
-.name{
+.name {
     font-weight: bold;
-font-size:  1.3rem;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 26px;
+    font-size: 1.3rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
 }
-.exp{
+.exp {
     font-size: 1rem;
 }
-.containar{
+.containar {
     width: 178.39px;
     height: 178.39px;
 }
-.allCards{
-
+.allCards {
     justify-self: center;
     display: flex;
     align-items: center;
     gap: 3rem;
     justify-content: center;
-
 }
