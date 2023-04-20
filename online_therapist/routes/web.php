@@ -1,8 +1,10 @@
 <?php
 
+
 use App\Models\Blogs;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,23 +32,9 @@ Route::get('/login', function () {
     ]);
 });
 // blogs
-Route::get('/blogs', function () {
-    return view('blogs',[
-        "Blogs" => Blogs::all()
-    ]);
-});
+Route::get('/blogs', [BlogsController::class , 'index']);
 
-Route::get('/blog/{id}', function ($id) {
-    $blog =  Blogs::find($id);
-    if($blog) {
-        return view('blog',[
-            "blog" =>$blog
-        ]);
-    } else{
-        abort("404");
-    }
-   
-});
+Route::get('/blog/{id}', [BlogsController::class , 'show']);
 
 Route::get('/check-db-connection', function () {
     try {
@@ -70,5 +58,3 @@ Route::get('/about', function () {
 
     ]);
 });
-
-
