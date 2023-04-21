@@ -1,0 +1,71 @@
+.post-con {
+    padding: 10px 100px 60px 100px;
+}
+
+.post-t {
+    font-size: 35px;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.post-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-span {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.post-title {
+    padding: 25px 25px;
+    width: 500px;
+    border-radius: 25px;
+    background-color: #eaf8f9;
+    border: 0;
+    font-size: 25px;
+}
+
+.post-blog {
+    padding: 25px 25px;
+    width: 500px;
+    border-radius: 25px;
+    background-color: #eaf8f9;
+    border: 0;
+    font-size: 25px;
+}
+
+.post-btn {
+    padding: 10px 40px;
+    height: 56px;
+    border: none;
+    border-radius: 22px;
+    width: 300px;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: #2dd4e3ad;
+    transition: all 0.3s;
+}
+
+.post-btn:hover {
+    background-color: #2dd3e3;
+}
+
+.error {
+    color: red;
+    font-size: 15px;
+}
+
+.post-img {
+    padding: 25px 25px;
+    width: 500px;
+    border-radius: 25px;
+    background-color: #eaf8f9;
+    border: 0;
+    font-size: 25px;
+}

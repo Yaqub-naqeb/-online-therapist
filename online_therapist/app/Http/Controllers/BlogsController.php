@@ -28,4 +28,25 @@ class BlogsController extends Controller
 
          }
 
+         public function  create(){
+            return view('write');
+         }
+
+         public function store(Request $request){
+            $formFileds = $request ->validate([
+                'title' =>'required' ,
+                'desc' =>'required' , 
+                
+            ]);
+
+            $formFileds['user_id'] = 22;
+            Blogs::create($formFileds);
+        
+            return redirect('/blogs')->with("message" , "Blog is Posted successfully");
+
+            
+         } 
+
+
+
         }

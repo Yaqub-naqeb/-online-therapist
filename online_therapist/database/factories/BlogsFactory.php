@@ -20,8 +20,7 @@ class BlogsFactory extends Factory
             'title' => $this ->faker->sentence(),
             'desc' => $this -> faker->paragraph(4),
             'user_id' => $this -> faker -> randomDigitNotNull(),
-           
-           
+        
         ];
     }
 }

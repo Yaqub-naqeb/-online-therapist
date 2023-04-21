@@ -36,6 +36,11 @@ Route::get('/blogs', [BlogsController::class , 'index']);
 
 Route::get('/blog/{id}', [BlogsController::class , 'show']);
 
+Route::get('/write', [BlogsController::class , 'create']);
+
+Route::post('/blogs', [BlogsController::class , 'store']);
+
+
 Route::get('/check-db-connection', function () {
     try {
         DB::connection()->getPdo();

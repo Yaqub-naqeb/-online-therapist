@@ -13,7 +13,7 @@
     
             <article class="first ">
                 <h1 class="h1">{{$blog["title"]}}</h1>
-                <p class="p">{{$blog["title"]}}</p>
+                <p class="p">{{$blog["desc"]}}</p>
             </article>
            
     

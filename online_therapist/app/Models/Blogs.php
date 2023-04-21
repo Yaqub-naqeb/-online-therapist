@@ -8,7 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Blogs extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'title',
+        'desc',
+        'user_id',
+    ];
 
+    
     public function scopeFilter($query , array $filters){
         if($filters['search'] ?? false) {
             $query ->where('title' , 'like' , '%' . request('search') . '%');
