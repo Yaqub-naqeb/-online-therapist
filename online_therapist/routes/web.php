@@ -63,3 +63,11 @@ Route::get('/about', function () {
 
     ]);
 });
+// contact us
+Route::get('/contactUs', function () {
+    return view('contactUs',[
+        'title'=>'SEND US YOUR REQUEST!',
+        'p'=>"Do you have a question, concern, idea, feedback, or problem?  If you need assistance, please fill out the form below and we'd be happy to help!"
+
+    ]);
+});

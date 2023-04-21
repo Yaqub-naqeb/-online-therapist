@@ -1,12 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+@extends('layout')
+@section('content')
+
+<div class="bod">
+    <link rel="stylesheet" href="{{asset('style/contact.css')}}">
+
+    {{-- header --}}
+   <div class="cont">
+   <h1>{{$title}}</h1>
+   <p>{{$p}}</p>
+   </div>
+   {{-- form --}}
+   <form action="" class="form">
+    <div class="cont_1">
+        <p>FullName:</p>
+        <input class="inp_1" type="text" placeholder="Enter your fullName here...">
+    </div>
+
+    <div class="cont_2">
+        <p>
+            Email:
+        </p>
+        <input class="inp_1" type="email" name="" id="" placeholder="Enter your email adress here...">
+
+    </div>
+    <div class="cont_2">
+        <p>Detail:</p>
+        <textarea class="inp_1" name="" id="" cols="30" rows="10" placeholder="Enter your detail here..."></textarea>
+
+    </div>
+    <button class="btn">
+        Submit
+    </button>
+   </form>
     
-</body>
-</html>
+</div>
+@endsection
