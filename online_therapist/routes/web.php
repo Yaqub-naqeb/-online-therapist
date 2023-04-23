@@ -18,7 +18,9 @@ use App\Http\Controllers\BlogsController;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home' , [
+        "Blogs" => Blogs::latest()->paginate(4)
+    ]);
 });
 Route::get('/signup', function () {
     return view('signup',[
@@ -34,7 +36,8 @@ Route::get('/login', function () {
 // blogs
 Route::get('/blogs', [BlogsController::class , 'index']);
 
-Route::get('/blog/{id}', [BlogsController::class , 'show']);
+Route::get('/blog/{id}', [BlogsController::class , 'show' 
+]);
 
 Route::get('/write', [BlogsController::class , 'create']);
 

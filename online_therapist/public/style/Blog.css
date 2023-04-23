@@ -15,6 +15,9 @@
 }
 .image {
     width: 1112px;
+    border-radius: 35px;
+    height: 500px;
+    object-fit: cover;
 }
 .h1 {
     font-size: 3rem;

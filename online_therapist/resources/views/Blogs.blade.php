@@ -14,6 +14,11 @@
               <x-blog-card :blog='$blog'></x-blog-card>
           @endforeach
            
+
+        </div>
+
+        <div class="paginate">
+            {{$Blogs->links()}}
         </div>
     </section>
     @endsection

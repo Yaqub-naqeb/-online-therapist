@@ -51,6 +51,7 @@
     font-size: 20px;
     transform: translateY(50px);
     padding: 0 10px;
+    color: white;
     transition: all 0.3s ease-out;
 }
 
@@ -105,4 +106,8 @@
 
 .search-btn:hover {
     background-color: #2dd3e3;
+}
+
+.paginate {
+    margin-top: 40px;
 }

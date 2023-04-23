@@ -31,11 +31,10 @@
     <h2>Recent BLOGs</h2>
 
     <div class="blog-container">
-        <img class="img-blog" src="{{Url('images/test.png')}}" alt="">
-        <img class="img-blog" src="{{Url('images/test.png')}}" alt="">
-        <img class="img-blog" src="{{Url('images/test.png')}}" alt="">
-        <img class="img-blog" src="{{Url('images/test.png')}}" alt="">
-        <img class="img-blog" src="{{Url('images/test.png')}}" alt="">
+        @foreach ($Blogs as $blog)
+         
+        <x-blog-card :blog='$blog'></x-blog-card>
+    @endforeach
     </div>
 </section>
 @endsection

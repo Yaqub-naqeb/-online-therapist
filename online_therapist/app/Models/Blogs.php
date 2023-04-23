@@ -12,6 +12,7 @@ class Blogs extends Model
         'title',
         'desc',
         'user_id',
+        'image'
     ];
 
     

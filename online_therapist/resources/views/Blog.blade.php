@@ -6,7 +6,7 @@
     <div class="body">
         <link rel="stylesheet" href="{{asset('style/blog.css')}}">
         <div >
-            <img class="image" src="{{Url('images/Blogimg.png')}}" alt="">
+            <img class="image" src="{{$blog->image? asset('storage/' . $blog->image) : asset('images/Blogimg.png')}}" alt="">
         </div>
         {{-- writing --}}
         <div class="writing">
@@ -28,11 +28,14 @@
     </div>
     {{-- Recommend section --}}
     <div >
-        <h4 class="h4">Recommended for you</h4>
+        <h4 class="h4">Latest Blogs Recommended</h4>
         <div class="imgs">
-            <img class="" src="{{Url('images/Group 126.png')}}" alt="">
-            <img class="" src="{{Url('images/Group 128.png')}}" alt="">
-    
+           
+                @foreach ($BlogRecent as $blog)
+                 
+                <x-blog-card :blog='$blog'></x-blog-card>
+            @endforeach
+           
         </div>
     </div>
     </div>
