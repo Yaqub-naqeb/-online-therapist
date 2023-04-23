@@ -10,7 +10,7 @@
             <li><a href="/write">write</a></li>
 
             <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/contactUs">Contact Us</a></li>
             <li><a href="/signup">Signup</a></li>
 
         </ul>

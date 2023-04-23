@@ -1,7 +1,4 @@
 @extends('layout')
-
-
-
 @section('content')
     <div class="body">
         <link rel="stylesheet" href="{{asset('style/blog.css')}}">
