@@ -62,3 +62,36 @@
     display: flex;
     gap: 1rem;
 }
+
+.edit-btn {
+    padding: 10px 20px;
+    height: 46px;
+    border: none;
+    border-radius: 18px;
+    width: 200px;
+    font-size: 16px;
+    cursor: pointer;
+
+    background-color: #2dd4e3ad;
+    transition: all 0.3s;
+}
+
+.edit-btn:hover {
+    background-color: #2dd3e3;
+}
+
+.delete-btn {
+    padding: 10px 20px;
+    height: 46px;
+    border: none;
+    border-radius: 18px;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+
+    background-color: #ff2929ad;
+    transition: all 0.3s;
+}
+.delete-btn:hover {
+    background-color: #ee2121;
+}

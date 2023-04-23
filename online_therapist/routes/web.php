@@ -36,13 +36,16 @@ Route::get('/login', function () {
 // blogs
 Route::get('/blogs', [BlogsController::class , 'index']);
 
-Route::get('/blog/{id}', [BlogsController::class , 'show' 
+Route::get('/blogs/{blog}', [BlogsController::class , 'show' 
 ]);
 
 Route::get('/write', [BlogsController::class , 'create']);
 
 Route::post('/blogs', [BlogsController::class , 'store']);
 
+Route::get('/blogs/{blog}/edit', [BlogsController::class , 'edit']);
+Route::put('/blogs/{blog}', [BlogsController::class , 'update']);
+Route::delete('/blogs/{blog}', [BlogsController::class , 'destroy']);
 
 Route::get('/check-db-connection', function () {
     try {

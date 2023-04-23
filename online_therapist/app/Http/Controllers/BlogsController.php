@@ -52,6 +52,33 @@ class BlogsController extends Controller
             
          } 
 
+         public function  edit(Blogs $blog){
+           
+            return view('edit' , ['blog'=>$blog]);
+         }
+
+         
+         public function update(Request $request , Blogs $blog){
+         
+            $formFileds = $request ->validate([
+                'title' =>'required' ,
+                'desc' =>'required' , 
+            ]);
+
+            if($request->hasFile("image")){
+                $formFileds["image"] = $request->file("image")->store("images" , "public");
+            }
+            $formFileds['user_id'] = 22;
+            $blog->update($formFileds);
+            return back()->with("message" , "Blog is Updated successfully");
+
+            
+         } 
+
+         public function destroy(Blogs $blog){
+            $blog->delete();
+            return redirect('/blogs')->with("message" , "Blog is Delete successfully");
+         }
 
 
         }
