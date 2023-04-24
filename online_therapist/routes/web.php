@@ -5,6 +5,7 @@ use App\Models\Blogs;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogsController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,17 +23,15 @@ Route::get('/', function () {
         "Blogs" => Blogs::latest()->paginate(4)
     ]);
 });
-Route::get('/signup', function () {
-    return view('signup',[
-        'title'=>'signup Now'
-    ]);
-});
+Route::get('/signup',[UserController::class , 'create']);
+Route::post('/',[UserController::class , 'store']);
+Route::post('/logout',[UserController::class , 'logout']);
+
+
 // login
-Route::get('/login', function () {
-    return view('login',[
-        'title'=>'Login'
-    ]);
-});
+Route::get('/login', [UserController::class , 'login']);
+Route::post('/login/authenticate', [UserController::class , 'authenticate']);
+
 // blogs
 Route::get('/blogs', [BlogsController::class , 'index']);
 

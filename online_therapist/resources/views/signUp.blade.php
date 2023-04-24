@@ -1,60 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
+@extends('layout')
+@section('content')
+<div class="con">
+    <link rel="stylesheet" href="{{asset('style/signup.css')}}">
+    <div>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{asset('style/login&Signup.css')}}">
-</head>
-
-<body>
-
-
-    @include('navbar')
-    @yield('content')
-
-    <div class="con">
-        <div>
-
-            <img src="{{Url('images/SignupImage.png')}}" alt="">
-        </div>
-        <div class="rightPart">
-
-            <h1 class="sign-up-title">{{$title}}</h1>
-
-            <form action="" class="form">
-                {{-- first name and last name  --}}
-                <div class="firstName__LastName_input">
-                    <input type="text" name="" id="" class="inp" placeholder="First Name">
-                    <input type="text" name="" id="" class="inp" placeholder="Last Name">
-                </div>
-
-                <input type="email" class="fullInp" name="" id="" placeholder="Your Email">
-                <input type="email" class="fullInp" name="" id="" placeholder="Confirm Email">
-                {{-- password and confirm password --}}
-                <div class="firstName__LastName_input">
-                    <input type="password" name="" class="inp" id="" placeholder="Password">
-                    <input type="password" name="" class="inp" id="" placeholder="Confirm Password">
-                </div>
-
-
-                {{-- buttons --}}
-                <div class="btns">
-                    <button class="login-btn">Login</button>
-                    <button class="sign-up-btn">Signup</button>
-                </div>
-
-
-            </form>
-        </div>
+        <img src="{{Url('images/SignupImage.png')}}" alt="">
     </div>
+    <div class="rightPart">
+
+        <h1 class="sign-up-title">Sign Up</h1>
+
+        <form method="POST" action="/" class="form" enctype="multipart/form-data">
+            @csrf
+            {{-- first name and last name  --}}
+            
+                <input type="text" name="name" id="" class="input" placeholder="Name">
+               @error('name')
+               <span class="error">{{$message}}</span>
+               @enderror
+            
+
+            <input type="email" class="input" name="email" id="" placeholder="Your Email">
+            @error('email')
+            <span class="error">{{$message}}</span>
+            @enderror
+            {{-- password and confirm password --}}
+            <div class="pass-con">
+                <input type="password" value="{{old('password')}}" name="password" class="input" id="" placeholder="Password">
+               
+                <input type="password" name="password_confirmation" class="input" id="" value="{{old('password_confirmation')}}" placeholder="Confirm Password">
+               
+            </div>
+            @error('password')
+            <span class="error">{{$message}}</span>
+            @enderror
+            @error('password-confirmation')
+            <span class="error">{{$message}}</span>
+            @enderror
+            <label  for="">
+                <span>Profile picture</span>
+                <input type="file" name="image" class="input" id="" >
+
+            </label>
+          
+
+            {{-- buttons --}}
+            <div class="btns">
+                <button type="button" name="login-page" class="login-btn">
+                  <a  href="/login">Login</a>  
+                </button>
+                <button type="submit" class="sign-up-btn">Signup</button>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+@endsection
+  
 
 
 
-
-</body>
-
-</html>

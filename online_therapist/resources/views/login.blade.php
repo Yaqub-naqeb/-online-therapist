@@ -1,43 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{asset('style/login&Signup.css')}}">
-</head>
-<body class="Loginbody">
-    
-{{-- left part --}}
-<div>
-
-    <img src="{{Url('images/loginImage.png')}}" alt="">
+@extends('layout')
+@section('content')
+<div class="con">
+    <link rel="stylesheet" href="{{asset('style/signup.css')}}">
+    <div>
+        <img src="{{Url('images/loginImage.png')}}" alt="">
     </div>
-    
-    {{-- Right part --}}
     <div class="rightPart">
-    
-        <h1 class="sign-up-title">{{$title}}</h1>
-        
-    <form action="" class="loginForm">
-      
-        
-        <input type="email" class="fullInp"  name="" id="" placeholder="Your Email">
-        <input type="password" class="fullInp" name="" id="" placeholder="Password">
-      
-        
-        
-        {{-- buttons --}}
-        <div class="btns">
-            <button class="login-btn">Login</button>
-            <button class="sign-up-btn">Signup</button>
-        </div>
-        
-        
+
+        <h1 class="sign-up-title">Login</h1>
+
+        <form method="POST" action="/login/authenticate" class="form" >
+            @csrf
+           
+               
+            <input type="email" class="input" name="email" id="" placeholder="Your Email">
+            @error('email')
+            <span class="error">{{$message}}</span>
+            @enderror
+                <input type="password" value="{{old('password')}}" name="password" class="input" id="" placeholder="Password">
+            @error('password')
+            <span class="error">{{$message}}</span>
+            @enderror
+
+          
+            <div class="btns">
+                <button type="button" name="signup-page" class="login-btn">
+                  <a href="/signup">Signup</a>  
+                </button>
+                <button type="submit" class="sign-up-btn">Login</button>
+            </div>
+
+
         </form>
     </div>
-    
-</body>
-</html>
+</div>
+@endsection
+  
+
+
+

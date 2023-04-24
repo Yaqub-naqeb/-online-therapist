@@ -7,7 +7,12 @@
     <div class="text-container">
         <h3>WE ARE HERE TO </h3>
         <h1>HELP</h1>
+        @auth
+        <p>Live well and healthy with us</p>
+        @else
         <button><a href="/signup"> SIGN UP</a></button>
+        @endauth
+       
     </div>
 
     <div>

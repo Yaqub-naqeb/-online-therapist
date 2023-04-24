@@ -26,6 +26,7 @@ ul {
     width: fit-content;
     padding: 0 40px;
     margin-right: 70px;
+    align-items: center;
 }
 
 li {
@@ -42,4 +43,28 @@ a {
     font-size: 50px;
     color: black;
     margin-left: 70px;
+}
+
+.welcome {
+    font-size: 25px;
+}
+
+.logout-btn {
+    background-color: rgba(254, 0, 0, 0.393);
+    border: none;
+    width: 150px;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0;
+    color: red;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.logout-btn:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.1);
 }
