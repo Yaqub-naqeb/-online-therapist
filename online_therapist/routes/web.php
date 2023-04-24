@@ -32,6 +32,7 @@ Route::post('/logout',[UserController::class , 'logout'])->middleware('auth');
 Route::get('/login', [UserController::class , 'login'])->name('login')->middleware('guest');
 Route::post('/login/authenticate', [UserController::class , 'authenticate'])->middleware('guest');
 
+Route::get('/profile', [BlogsController::class , 'profile'])->middleware('auth');
 // blogs
 Route::get('/blogs', [BlogsController::class , 'index']);
 

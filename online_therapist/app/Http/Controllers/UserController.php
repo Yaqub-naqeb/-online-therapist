@@ -62,4 +62,7 @@ return redirect('/')->with("message" , "User is logout");
             return back()->withErrors(['email' => "Invalid User"])->onlyInput('email');
         }
     }
+
+  
+
 }

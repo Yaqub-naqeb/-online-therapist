@@ -1,0 +1,49 @@
+.con {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    padding: 50px 100px;
+    min-height: 100vh;
+}
+
+.profile-image {
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.profile-text__con {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.username {
+    font-size: 30px;
+}
+
+.email {
+    font-size: 30px;
+}
+
+.profile-title {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.blog-card__user {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.con-text {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}

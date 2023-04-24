@@ -22,4 +22,10 @@ class Blogs extends Model
         }
 
     }
+
+    //relationship to the user table
+
+    public function user(){
+        return $this -> belongsTo(User::class , 'user_id');
+    }
 }

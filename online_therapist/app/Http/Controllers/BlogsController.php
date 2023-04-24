@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 use App\Models\Blogs;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class BlogsController extends Controller
 {
@@ -18,10 +20,12 @@ class BlogsController extends Controller
     public function show($id) {
      
             $blog =  Blogs::find($id);
+            $user = User::find($blog->user_id);;
             if($blog) {
                 return view('blog',[
                     "blog" =>$blog , 
-                    "BlogRecent" => Blogs::latest()->paginate(4)
+                    "BlogRecent" => Blogs::latest()->paginate(4) , 
+                    "user" =>$user
                 ]);
             } else{
                 abort("404");
@@ -44,7 +48,7 @@ class BlogsController extends Controller
             if($request->hasFile("image")){
                 $formFileds["image"] = $request->file("image")->store("images" , "public");
             }
-            $formFileds['user_id'] = 22;
+            $formFileds['user_id'] = auth()->id();
             Blogs::create($formFileds);
         
             return redirect('/blogs')->with("message" , "Blog is Posted successfully");
@@ -68,7 +72,7 @@ class BlogsController extends Controller
             if($request->hasFile("image")){
                 $formFileds["image"] = $request->file("image")->store("images" , "public");
             }
-            $formFileds['user_id'] = 22;
+            $formFileds['user_id'] = auth()->id();
             $blog->update($formFileds);
             return back()->with("message" , "Blog is Updated successfully");
 
@@ -81,4 +85,11 @@ class BlogsController extends Controller
          }
 
 
+
+         public function profile(){
+            $user = Auth::user();
+$user_blogs = Blogs::where('user_id', $user->id)->get();
+            return view('profile' , ["user_blogs"=>$user_blogs , "user"=>$user]);
+
+        }
         }

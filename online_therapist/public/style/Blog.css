@@ -95,3 +95,29 @@
 .delete-btn:hover {
     background-color: #ee2121;
 }
+
+.profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.blog-img__con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-img__con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.span-by {
+    font-size: 18px;
+    font-weight: 600;
+}
