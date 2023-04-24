@@ -23,28 +23,27 @@ Route::get('/', function () {
         "Blogs" => Blogs::latest()->paginate(4)
     ]);
 });
-Route::get('/signup',[UserController::class , 'create']);
-Route::post('/',[UserController::class , 'store']);
-Route::post('/logout',[UserController::class , 'logout']);
+Route::get('/signup',[UserController::class , 'create'])->middleware('guest');
+Route::post('/',[UserController::class , 'store'])->middleware('guest');
+Route::post('/logout',[UserController::class , 'logout'])->middleware('auth');
 
 
 // login
-Route::get('/login', [UserController::class , 'login']);
-Route::post('/login/authenticate', [UserController::class , 'authenticate']);
+Route::get('/login', [UserController::class , 'login'])->name('login')->middleware('guest');
+Route::post('/login/authenticate', [UserController::class , 'authenticate'])->middleware('guest');
 
 // blogs
 Route::get('/blogs', [BlogsController::class , 'index']);
 
-Route::get('/blogs/{blog}', [BlogsController::class , 'show' 
-]);
+Route::get('/blogs/{blog}', [BlogsController::class , 'show']);
 
-Route::get('/write', [BlogsController::class , 'create']);
+Route::get('/write', [BlogsController::class , 'create'])->middleware('auth');
 
 Route::post('/blogs', [BlogsController::class , 'store']);
 
-Route::get('/blogs/{blog}/edit', [BlogsController::class , 'edit']);
-Route::put('/blogs/{blog}', [BlogsController::class , 'update']);
-Route::delete('/blogs/{blog}', [BlogsController::class , 'destroy']);
+Route::get('/blogs/{blog}/edit', [BlogsController::class , 'edit'])->middleware('auth');
+Route::put('/blogs/{blog}', [BlogsController::class , 'update'])->middleware('auth');
+Route::delete('/blogs/{blog}', [BlogsController::class , 'destroy'])->middleware('auth');
 
 Route::get('/check-db-connection', function () {
     try {
@@ -57,7 +56,6 @@ Route::get('/check-db-connection', function () {
 // After signup
 Route::get('/aftersignup', function () {
     return view('aftersignup',[
-        
     ]);
 });
 // about
