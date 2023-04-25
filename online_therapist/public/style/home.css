@@ -5,6 +5,7 @@
     align-items: center;
     min-height: 80vh;
     flex-wrap: wrap;
+    margin-top: 85px;
 }
 
 .text-container {

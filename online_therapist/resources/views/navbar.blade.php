@@ -1,4 +1,4 @@
-
+{{-- for disctop --}}
     <nav class="nav">
         <link rel="stylesheet" href="{{asset('style/navbar.css')}}">
         <h1 class="nav-title">Healing</h1>
@@ -36,4 +36,10 @@
          
         </ul>
     </nav>
-<
+
+
+{{-- for mobile --}}
+
+<nav>
+    
+</nav>
