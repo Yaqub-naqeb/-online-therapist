@@ -1,4 +1,4 @@
-
+{{-- for disctop --}}
     <nav class="nav">
         <link rel="stylesheet" href="{{asset('style/navbar.css')}}">
         <h1 class="nav-title">Healing</h1>
@@ -6,7 +6,10 @@
         <h4 class="welcome">Welcome {{auth()->user()->name}}</h4>
         @endauth
         
-        <ul>
+      <div class="ul open">
+
+
+        <ul >
             <li><a href="/">Home</a></li>
 
 
@@ -34,5 +37,24 @@
 
          
         </ul>
+
+      </div>
+
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <script>
+            document.querySelector(".burger-menu").addEventListener("click", function() {
+              this.classList.toggle("open");
+              document.querySelector(".ul").classList.toggle("open")
+            });
+         
+          </script>
+
+
     </nav>
-<
+
+
