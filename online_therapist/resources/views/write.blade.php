@@ -4,8 +4,9 @@
     
 <section class="post-con">
     <link rel="stylesheet" href="{{asset('style/write.css')}}">
-    <h1 class="post-t">Write a blog that heal others</h1>
+    
     <form method="post" class="post-form" action="/blogs" enctype="multipart/form-data">
+        <h1 class="post-t">Write a blog that heal others</h1>
         @csrf
         <label class="post-label" for="">
             <span class="post-span" >Blog title</span>
@@ -31,6 +32,8 @@
      <button class="post-btn" type="submit">Post</button>
 
     </form>
-    
+    <div>
+        <img src="{{Url('images/addblog.svg')}}" alt="">
+    </div>
 </section>
 @endsection

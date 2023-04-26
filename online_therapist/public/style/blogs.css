@@ -61,7 +61,7 @@
 }
 
 .card:hover .card-con-text {
-    background-color: rgba(128, 128, 128, 0.404);
+    background-color: rgba(0, 0, 0, 0.404);
 }
 
 .card:hover .card-title {

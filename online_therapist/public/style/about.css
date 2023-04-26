@@ -14,7 +14,7 @@
     /* gap: 3rem; */
 }
 .bd {
-    height: 100vh;
+    min-height: 100vh;
 
     /* padding: 0 4rem 0 4rem; */
     display: flex;
@@ -22,10 +22,11 @@
     align-items: center;
     flex-direction: column;
     gap: 5rem;
+    padding-bottom: 120px;
 }
 .image-about {
-    width: 178.39px;
-    height: 178.39px;
+    width: 278.39px;
+    height: 278.39px;
 
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -52,24 +53,23 @@
 
     color: #424a4f;
     border-bottom-left-radius: 25px;
+    min-height: 50%;
     border-bottom-right-radius: 25px;
-    transform: translateY(-0.4rem);
 }
 .name {
-    font-weight: bold;
-    font-size: 1.3rem;
-    font-family: "Poppins";
+    font-weight: 600;
+
     font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
+
+    font-size: 25px;
     line-height: 26px;
 }
 .exp {
-    font-size: 1rem;
+    font-size: 20px;
 }
 .containar {
-    width: 178.39px;
-    height: 178.39px;
+    width: 278.39px;
+    min-height: 328.39px !important;
 }
 .allCards {
     justify-self: center;
@@ -77,4 +77,34 @@
     align-items: center;
     gap: 3rem;
     justify-content: center;
+}
+
+.link {
+    background-color: #6bd24d;
+    color: #000000;
+    font-size: 15px;
+    border-radius: 15px;
+    margin: 10px 0;
+    padding: 4px 20px;
+}
+
+.projects-con {
+    display: flex;
+    gap: 10px;
+    padding: 2px 5px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.span {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.projects {
+    font-size: 15px;
+
+    text-decoration: underline;
 }

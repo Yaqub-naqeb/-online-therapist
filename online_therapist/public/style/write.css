@@ -1,5 +1,9 @@
 .post-con {
     padding: 10px 100px 60px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .post-t {

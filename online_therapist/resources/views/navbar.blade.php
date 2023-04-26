@@ -17,7 +17,6 @@
             @auth
             <li><a href="/write">write</a></li>
             
-            <li><a href="/manage">Manage blogs</a></li>
             <li><a href="/profile">Profile</a></li>
             <form method="POST" action="/logout">
                 @csrf
