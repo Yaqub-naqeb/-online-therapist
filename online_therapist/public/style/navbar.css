@@ -24,11 +24,11 @@ body {
 
 ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 30px;
     width: fit-content;
     padding: 0 40px;
-    margin-right: 70px;
+    transform: translateX(20rem);
     align-items: center;
     z-index: 100;
 }
@@ -114,6 +114,8 @@ a {
   justify-content: center;
   text-align: center;
   padding: 1rem 0 1rem 0;
+  transform: translateX(0rem);
+
 
 }
 
