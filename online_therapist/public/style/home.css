@@ -188,5 +188,8 @@ button {
 .ask{
     font-size: 1.3rem;
 }
+.container{
+    overflow-x: hidden;
+}
 
 }
