@@ -113,3 +113,17 @@
 .paginate {
     margin-top: 40px;
 }
+
+@media (max-width: 640px) {
+    
+    .card {
+        width: 300px;
+        height: 300px;
+        border-radius: 35px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        transform: translateX(-3rem);
+    }
+    
+}

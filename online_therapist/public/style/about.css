@@ -71,6 +71,7 @@
 .containar {
     width: 278.39px;
     min-height: 328.39px !important;
+ transform: translateY(-4.5rem);
 }
 .allCards {
     justify-self: center;
