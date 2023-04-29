@@ -4,7 +4,7 @@
 <div class="con">
     <link rel="stylesheet" href="{{asset('style/signup.css')}}">
     <div>
-        <img src="{{Url('images/loginImage.png')}}" alt="">
+        <img class="img" src="{{Url('images/loginImage.png')}}" alt="">
     </div>
     <div class="rightPart">
 

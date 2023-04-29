@@ -101,6 +101,11 @@
 
     text-decoration: underline;
 }
+.btns{
+    display: flex ;
+    flex-direction: column;
+  
+}
 
 @media (max-width: 640px) {
     .allCards {

@@ -75,7 +75,7 @@
 }
 @media (max-width: 640px) {
     .bod{
-        margin: 0 0rem 0 0rem;
+        padding: 0 0rem 0 0rem;
 
         height: fit-content;
     }
@@ -95,12 +95,13 @@
     }
     .inpts {
         width: 303.72px;
+        
     }
     .bod {
         margin: 0 3rem 0 3rem;
-        height: 90vh;
         /* transform: translateY(-5rem); */
         margin-top: 90px;
+        height: fit-content;
     }
     .p {
         font-size: 16px !important;
