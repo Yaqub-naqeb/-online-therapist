@@ -1,76 +1,75 @@
-.bod{
-   margin: 0 3rem 0 3rem;
-   height: 90vh;
-   /* transform: translateY(-5rem); */
+.bod {
+    margin: 0 3rem 0 3rem;
+    min-height: 100vh;
+    padding: 20px 100px;
+    /* transform: translateY(-5rem); */
 }
-.p{
-    
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 36px;
-font-family: 'Poppins';
+.p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
 
-display: flex;
-align-items: center;
-transform: translateY(-1rem);
-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    transform: translateY(-1rem);
+    color: rgba(0, 0, 0, 0.5);
 }
-.h1{
-font-style: normal;
-font-weight: 400;
-font-size: 50px;
-line-height: 75px;
-/* identical to box height */
-color: #000000;
+.h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 75px;
+    /* identical to box height */
+    color: #000000;
 }
-.cont{
+.cont {
     /* margin: 5rem; */
     margin-bottom: 3rem;
 }
-.inpts{
+.inpts {
     outline: none;
-    background: #FFFFFF;
+    background: #ffffff;
     border: 0.5px solid rgba(0, 0, 0, 0.12);
     box-shadow: 0px 4px 4px rgba(172, 151, 151, 0.12);
     border-radius: 10px;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
     /* padding: 1rem; */
     width: 603.72px;
     height: 38.35px;
-    
-
 }
-.form{}
-.cont_1{}
-.cont_2{}
-.cont_3{}
-.inp_1{}
-.inp_2{}
-.inp_3{}
-.inp_4{
+.form {
+}
+.cont_1 {
+}
+.cont_2 {
+}
+.cont_3 {
+}
+.inp_1 {
+}
+.inp_2 {
+}
+.inp_3 {
+}
+.inp_4 {
     outline: none;
-    background: #FFFFFF;
+    background: #ffffff;
     border: 0.5px solid rgba(0, 0, 0, 0.12);
     box-shadow: 0px 4px 4px rgba(172, 151, 151, 0.12);
     border-radius: 10px;
-    padding: .5rem  0 0 .5rem ;
+    padding: 0.5rem 0 0 0.5rem;
     /* padding: 1rem; */
     width: 603.72px;
-   
-
 }
-.btn{
-
+.btn {
     width: 150px;
     height: 50px;
-    background: #2DD3E3;
-color: black;   
-border: none;
-font-weight: bolder; 
-font-size: large;
-border-radius: 5px;
-margin-top: 1rem;
-
+    background: #2dd3e3;
+    color: black;
+    border: none;
+    font-weight: bolder;
+    font-size: large;
+    border-radius: 5px;
+    margin-top: 1rem;
 }
