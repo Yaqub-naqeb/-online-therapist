@@ -31,9 +31,13 @@
 
                         
                     </div>
+                    <div class="btns">
+
                   <a class="link" href="https://yaqwb-dev.netlify.app/" target="_blank">Portfolio</a>
                   <a class="link" href="https://github.com/Yaqub-naqeb" target="_blank">Github</a>
                 </div>
+                </div>
+
                 </div>
         
         
@@ -54,8 +58,10 @@
                         <a target="_blank" class="projects" href="https://refubook-org.netlify.app/">Refubook ,</a> 
                         <a target="_blank" class="projects" href="https://wonder-booksss.netlify.app/book/:Sxss1kQxfP0C">Wonder Books ,</a> 
                     </div>
+                   <div class="btns">
                     <a class="link" href="https://abdulbari.vercel.app/" target="_blank">Portfolio</a>
                     <a class="link" href="https://github.com/Abdulbariii" target="_blank">Github</a>
+                   </div>
                 </div>
                 </div>
         
