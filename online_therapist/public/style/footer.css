@@ -29,3 +29,40 @@
     font-size: 25px;
     color: gray;
 }
+
+@media (max-width: 640px) {
+    .footer {
+        min-height: 30vh;
+        background-color: #fee89e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5rem;
+    }
+    
+    .footer-sub {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .sub-text {
+        font-size: 24px;
+
+    }
+    
+    .sub-p {
+        font-size: 15px;
+        color: gray;
+    }
+    
+    .footer-link {
+        display: flex;
+        font-size: 10px;
+        color: gray;
+    }
+    a{
+        font-size: 20px;
+    }
+}

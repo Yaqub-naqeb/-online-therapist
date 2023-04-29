@@ -16,24 +16,24 @@
     </div>
 
     <div>
-        <img src="{{Url('images/homesvg.svg')}}" alt="">
+        <img class="im" src="{{Url('images/homesvg.svg')}}" alt="">
     </div>
 </section>
 
 <section class="home-section__text">
 
-    <h2>Professional, licensed, and vetted therapists that you can trust</h2>
-    <p>Tap into the world's largest network of licensed, accredited, and experienced therapists who can help you
+    <h2 class="h2">Professional, licensed, and vetted therapists that you can trust</h2>
+    <p class="p">Tap into the world's largest network of licensed, accredited, and experienced therapists who can help you
         with a range of issues including depression, anxiety, relationships, trauma, grief, and more. with our
         therapists, you get the same professionalism and quality you would expect from an in-office therapist, but
         with the ability to communicate whenever and however you want.</p>
 
-    <button><a href="/write"> ASK A Question</a></button>
+    <button><a href="/write" class="ask"> ASK A Question</a></button>
 </section>
 
 <section class="home-section__blog">
 
-    <h2>Recent BLOGs</h2>
+    <h2 class="recent">Recent BLOGs</h2>
 
     <div class="blog-container">
         @foreach ($Blogs as $blog)

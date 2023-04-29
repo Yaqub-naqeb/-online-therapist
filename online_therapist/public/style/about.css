@@ -14,7 +14,8 @@
     /* gap: 3rem; */
 }
 .bd {
-    min-height: 100vh;
+   margin-top: 85px;
+    height: 100vh;
 
     /* padding: 0 4rem 0 4rem; */
     display: flex;
@@ -70,6 +71,7 @@
 .containar {
     width: 278.39px;
     min-height: 328.39px !important;
+ transform: translateY(-4.5rem);
 }
 .allCards {
     justify-self: center;
