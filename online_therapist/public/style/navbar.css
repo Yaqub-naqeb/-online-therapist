@@ -7,16 +7,16 @@ body {
 
 
 .nav {
-    width: 100%;
+    width: 100vw;
     background-color: #eaf8f9;
     display: flex;
     justify-content: space-between;
     height: 85px;
     align-items: center;
-    padding: 5px 0;
+    padding: 5px 0rem;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     margin-bottom: 100px;
     z-index: 50;
     box-shadow: .4rem .1rem 1rem rgba(0, 0, 0, 0.062);
@@ -28,7 +28,7 @@ ul {
     gap: 30px;
     width: fit-content;
     padding: 0 40px;
-    transform: translateX(20rem);
+    transform: translateX(5rem);
     align-items: center;
     z-index: 100;
 }
@@ -193,7 +193,10 @@ a {
   left: 50%;
 }
 
-
+.welcome {
+  font-size: 15px;
+  transform: translateX(-1rem);
+}
 
 
 }
