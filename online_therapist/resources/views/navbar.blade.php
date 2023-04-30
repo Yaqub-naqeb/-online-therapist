@@ -19,6 +19,7 @@
             
             @auth
             <li><a href="/write">write</a></li>
+            <li><a href="/appointment">Appointment</a></li>
             
             <li><a href="/profile">Profile</a></li>
             <form method="POST" action="/logout">

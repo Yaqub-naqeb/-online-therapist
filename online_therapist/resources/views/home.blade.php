@@ -36,8 +36,7 @@
     <h2 class="recent">Recent BLOGs</h2>
 
     <div class="blog-container">
-        @foreach ($Blogs as $blog)
-         
+        @foreach ($Blogs as $blog) 
         <x-blog-card :blog='$blog'></x-blog-card>
     @endforeach
     </div>

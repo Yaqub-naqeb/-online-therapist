@@ -1,0 +1,8 @@
+.appointment {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 85px;
+    padding-top: 150px;
+}

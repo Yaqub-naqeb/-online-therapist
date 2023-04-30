@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Http\Controllers\AppointmentController;
 use App\Models\Blogs;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
@@ -41,6 +41,8 @@ Route::get('/blogs/{blog}', [BlogsController::class , 'show']);
 Route::get('/write', [BlogsController::class , 'create'])->middleware('auth');
 
 Route::post('/blogs', [BlogsController::class , 'store']);
+
+Route::get('/appointment' , [AppointmentController::class , 'show']);
 
 Route::get('/blogs/{blog}/edit', [BlogsController::class , 'edit'])->middleware('auth');
 Route::put('/blogs/{blog}', [BlogsController::class , 'update'])->middleware('auth');
