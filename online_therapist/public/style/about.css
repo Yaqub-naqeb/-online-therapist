@@ -4,22 +4,16 @@
     font-weight: 400;
     font-size: 50px;
     line-height: 75px;
-    /* identical to box height */
-
     color: #000000;
 }
 .wrap {
     display: flex;
     flex-direction: column;
-    /* gap: 3rem; */
 }
 .bd {
    margin-top: 85px;
     height: 100vh;
-
-    /* padding: 0 4rem 0 4rem; */
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     gap: 5rem;
@@ -28,7 +22,6 @@
 .image-about {
     width: 278.39px;
     height: 278.39px;
-
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom: solid #6bd24d 5px;
@@ -40,8 +33,6 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 39px;
-    /* or 134% */
-
     color: #424a4f;
 }
 
@@ -59,9 +50,7 @@
 }
 .name {
     font-weight: 600;
-
     font-style: normal;
-
     font-size: 25px;
     line-height: 26px;
 }
@@ -79,6 +68,7 @@
     align-items: center;
     gap: 3rem;
     justify-content: center;
+
 }
 
 .link {
@@ -110,4 +100,52 @@
     font-size: 15px;
 
     text-decoration: underline;
+}
+.btns{
+    display: flex ;
+    flex-direction: column;
+  
+}
+
+@media (max-width: 640px) {
+    .allCards {
+    flex-direction: column;
+    gap: 3rem;
+    
+}
+.containar {
+    width: 378.39px;
+    min-height: 328.39px !important;
+ transform: translateY(-4.5rem);
+}
+.bd{
+    height: fit-content;
+
+}
+.image-about {
+    width: 378.39px;
+    height: 278.39px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom: solid #6bd24d 5px;
+    object-fit: cover;
+}
+.btns{
+    display: flex ;
+    gap: 1.4rem;
+    margin-bottom: 1rem;
+}
+.meet {
+text-align: center;
+}
+.title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000000;
+    margin: 0 3rem 2rem 3rem;
+}
+
 }

@@ -6,13 +6,13 @@ body {
 }
 
 .nav {
-    width: 100%;
+    width: 100vw;
     background-color: #eaf8f9;
     display: flex;
     justify-content: space-between;
     height: 85px;
     align-items: center;
-    padding: 5px 0;
+    padding: 5px 0rem;
     position: fixed;
     top: 0;
     left: 0;

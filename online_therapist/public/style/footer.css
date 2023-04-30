@@ -35,16 +35,20 @@
         min-height: 30vh;
         background-color: #fee89e;
         display: flex;
-        justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
-        padding: 5rem;
+        padding-left: 2rem;
+        gap: 2rem;
+        /* flex-wrap: wrap; */
+        /* padding: -5rem; */
+
     }
     
     .footer-sub {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        /* margin-left: 3rem; */
+        margin-left: -1rem;
     }
     
     .sub-text {

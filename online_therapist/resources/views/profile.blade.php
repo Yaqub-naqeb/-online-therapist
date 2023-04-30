@@ -5,7 +5,7 @@
 
     <link rel="stylesheet" href="{{asset('style/profile.css')}}">
 
-    
+    {{--  --}}
     <div >
         <img class="profile-image" src="{{$user->image? asset('storage/' . $user->image) : asset('images/Blogimg.png')}}" alt="">
     </div>

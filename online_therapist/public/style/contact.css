@@ -73,3 +73,46 @@
     border-radius: 5px;
     margin-top: 1rem;
 }
+@media (max-width: 640px) {
+    .bod{
+        padding: 0 0rem 0 0rem;
+
+        height: fit-content;
+    }
+    .inp_4{
+        outline: none;
+        background: #ffffff;
+        border: 0.5px solid rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 4px 4px rgba(172, 151, 151, 0.12);
+        border-radius: 10px;
+        padding: 0.5rem 0 0 0.5rem;
+        /* padding: 1rem; */
+        width: 303.72px;
+    }
+    .btn{
+        margin-bottom: 1rem ;
+      transform: translateX(5.3rem);
+    }
+    .inpts {
+        width: 303.72px;
+        
+    }
+    .bod {
+        margin: 0 3rem 0 3rem;
+        /* transform: translateY(-5rem); */
+        margin-top: 90px;
+        height: fit-content;
+    }
+    .p {
+        font-size: 16px !important;
+        line-height: 36px;
+    margin-top: 1rem;
+    }
+    .h1 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px !important;
+        line-height: 45px;
+        /* identical to box height */
+    }
+}

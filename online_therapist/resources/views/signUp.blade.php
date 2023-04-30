@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="{{asset('style/signup.css')}}">
     <div>
 
-        <img src="{{Url('images/SignupImage.png')}}" alt="">
+        <img class="img" src="{{Url('images/SignupImage.png')}}" alt="">
     </div>
     <div class="rightPart">
 
