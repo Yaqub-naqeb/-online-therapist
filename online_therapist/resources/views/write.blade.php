@@ -33,7 +33,7 @@
 
     </form>
     <div>
-        <img src="{{Url('images/addblog.svg')}}" alt="">
+        <img class="img" src="{{Url('images/addblog.svg')}}" alt="">
     </div>
 </section>
 @endsection

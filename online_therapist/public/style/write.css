@@ -6,6 +6,7 @@
     flex-wrap: wrap;
 }
 
+
 .post-t {
     font-size: 35px;
 }
@@ -81,4 +82,70 @@
     margin-top: 20px;
     width: 550px;
     border-radius: 20px;
+}
+
+@media (max-width: 640px) {
+    .img{
+        width:20rem;
+    }
+    .post-form {
+        margin-bottom: 5rem;
+    }
+    .post-t {
+        font-size: 25px;
+    }
+    
+    .post-con {
+        padding: 10px 100px 20px 100px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+    
+   
+    
+    .post-span {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    
+    .post-title {
+        padding: 20px 25px;
+        width: 330px;
+
+    }
+    
+    .post-blog {
+        padding: 20px 25px;
+        width: 330px;
+    
+    }
+    
+    .post-btn {
+        padding: 10px 40px;
+        height: 56px;
+        border: none;
+        border-radius: 22px;
+        width: 200px;
+        font-size: 22px;
+        cursor: pointer;
+        background-color: #2dd4e3ad;
+        transition: all 0.3s;
+    }
+    .post-img {
+        padding: 20px 25px;
+        width: 330px;
+     
+    }
+    
+    .img-update {
+        height: 200px;
+        object-fit: cover;
+    
+        margin-top: 20px;
+        width: 550px;
+        border-radius: 20px;
+    }
 }
