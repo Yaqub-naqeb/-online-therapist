@@ -1,0 +1,26 @@
+.booked-con {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 100px;
+    margin-top: 85px;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.booked-img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.booked-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.booked-date {
+    font-size: 20px;
+    font: 300;
+}

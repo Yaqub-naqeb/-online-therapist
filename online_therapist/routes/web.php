@@ -5,6 +5,7 @@ use App\Models\Blogs;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogsController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\UserController;
 
 /*
@@ -43,6 +44,8 @@ Route::get('/write', [BlogsController::class , 'create'])->middleware('auth');
 Route::post('/blogs', [BlogsController::class , 'store']);
 
 Route::get('/appointment' , [AppointmentController::class , 'show']);
+Route::post('/appointment' ,[AppointmentController::class , 'add']);
+Route::get('/booked' , [AppointmentController::class , 'booked']);
 
 Route::get('/blogs/{blog}/edit', [BlogsController::class , 'edit'])->middleware('auth');
 Route::put('/blogs/{blog}', [BlogsController::class , 'update'])->middleware('auth');
@@ -57,10 +60,7 @@ Route::get('/check-db-connection', function () {
     }
 });
 // After signup
-Route::get('/aftersignup', function () {
-    return view('aftersignup',[
-    ]);
-});
+
 // about
 Route::get('/about', function () {
     return view('about',[
@@ -70,10 +70,5 @@ Route::get('/about', function () {
     ]);
 });
 // contact us
-Route::get('/contactUs', function () {
-    return view('contactUs',[
-        'title'=>'SEND US YOUR REQUEST!',
-        'p'=>"Do you have a question, concern, idea, feedback, or problem?  If you need assistance, please fill out the form below and we'd be happy to help!"
-
-    ]);
-});
+Route::get('/contact' , [ContactController::class , 'index' ]);
+Route::post('/contact' , [ContactController::class , 'store' ]);

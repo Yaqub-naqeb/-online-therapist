@@ -4,5 +4,88 @@
     justify-content: center;
 
     margin-top: 85px;
-    padding-top: 90px;
+    padding: 90px 100px;
+    flex-direction: column;
+}
+
+.doctor-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.doctor-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 500px;
+    min-height: 300px;
+    border-radius: 30px;
+    background-color: #eaf8f9;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.doctor-img {
+    width: 200px;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.doctor-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.doctor-form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.doctor-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.doctor-specialty {
+    font-size: 15px;
+    color: black;
+    font-weight: 300;
+}
+
+.doctor-bio {
+    font-size: 10px;
+    color: black;
+    font-weight: 300;
+}
+
+.doctor-input {
+    width: 300px;
+    padding: 10px 5px;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    border: none;
+}
+
+.appoint-btn {
+    width: 300px;
+    padding: 10px 10px;
+    background-color: #fee89e;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
 }
