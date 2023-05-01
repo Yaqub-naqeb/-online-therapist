@@ -43,7 +43,7 @@ Route::get('/write', [BlogsController::class , 'create'])->middleware('auth');
 
 Route::post('/blogs', [BlogsController::class , 'store']);
 
-Route::get('/appointment' , [AppointmentController::class , 'show']);
+Route::get('/appointment' , [AppointmentController::class , 'show'])->middleware('auth');
 Route::post('/appointment' ,[AppointmentController::class , 'add']);
 Route::get('/booked' , [AppointmentController::class , 'booked']);
 
