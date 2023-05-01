@@ -72,3 +72,5 @@ Route::get('/about', function () {
 // contact us
 Route::get('/contact' , [ContactController::class , 'index' ]);
 Route::post('/contact' , [ContactController::class , 'store' ]);
+
+Route::post('/' , [ContactController::class , 'feeds']);

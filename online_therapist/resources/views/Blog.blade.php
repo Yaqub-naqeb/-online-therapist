@@ -3,9 +3,9 @@
     <div class="body">
         <link rel="stylesheet" href="{{asset('style/blog.css')}}">
         <div class="blog-img__con" >
-            <img class="image" src="{{$blog->image? asset('storage/' . $blog->image) : asset('images/Blogimg.png')}}" alt="">
+            <img class="image" src="{{$blog->image? asset('storage/' . $blog->image) : asset('images/defaultimg.png')}}" alt="">
           <div class="profile-img__con">
-          <span class="span-by">Posted By</span>   <img class="profile-img" src="{{$user->image? asset('storage/' . $user->image) : asset('images/Blogimg.png')}}" alt=""></div>  
+          <span class="span-by">Posted By</span>   <img class="profile-img" src="{{$user->image? asset('storage/' . $user->image) : asset('images/defaultimg.png')}}" alt=""></div>  
         </div>
         {{-- writing --}}
         <div class="writing">

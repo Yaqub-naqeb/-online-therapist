@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\Newsfeeds;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -35,10 +36,18 @@ class ContactController extends Controller
     }
 
   
-    public function show(string $id)
-    {
+    public function feeds(Request $request){
+        $formFileds = $request ->validate([
+            
+            'email' =>['required' , 'email' ], 
+        
+        ]);
+        Newsfeeds::create($formFileds);
+        return back()->with("message" , "Subscribed successfully");
 
     }
+
+    
 
    
     
