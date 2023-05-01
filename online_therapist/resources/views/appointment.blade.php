@@ -27,7 +27,7 @@
                         <input type="hidden" name="user_id" value="{{ Auth::id() }}">
                         <input type="hidden" name="doctor_id" value="{{ $doctor['id'] }}">
                         <input class="doctor-input" name="description" placeholder="describe your problem" type="text">
-                        <input class="doctor-i" name="appointment_time" placeholder="describe your problem" type="date">
+                        <input class="doctor-input" name="appointment_time" placeholder="describe your problem" type="date">
                           @error('appointment_time')
     <p class="error-message">{{ $message }}</p>
 @enderror

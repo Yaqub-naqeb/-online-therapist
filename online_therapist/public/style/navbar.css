@@ -90,6 +90,10 @@ a {
         color: black;
         margin-left: 10px;
     }
+    .welcome {
+        font-size: 15px;
+        transform: translateX(-1rem);
+    }
 
     .ul.open ul {
         display: none;

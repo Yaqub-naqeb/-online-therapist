@@ -18,7 +18,7 @@
             <li><a href="/contact">Contact Us</a></li>
             
             @auth
-            <li><a href="/write">write</a></li>
+            <li><a href="/write">Write</a></li>
             <li><a href="/appointment">Appointment</a></li>
             
             <li><a href="/profile">Profile</a></li>

@@ -125,4 +125,38 @@
 }
 
 @media (max-width: 640px) {
+    .writing {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .body {
+       
+        padding: 0rem 2rem !important;
+    }
+    .image {
+        width: 378px !important;
+        border-radius: 35px;
+        height: 300px;
+        object-fit: cover;
+        margin-top: 20px;
+    }
+    .imgs {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 2rem 0;
+        transform:translateX(2rem) ;
+                justify-content: center !important;
+        align-items: center !important;
+
+    }
+    .h1 {
+        font-size: 2rem !important;
+    }
+    .p {
+        line-height: 1.8;
+        font-size: 1rem !important;
+    }
 }

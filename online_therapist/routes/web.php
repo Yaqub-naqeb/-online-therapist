@@ -73,4 +73,4 @@ Route::get('/about', function () {
 Route::get('/contact' , [ContactController::class , 'index' ]);
 Route::post('/contact' , [ContactController::class , 'store' ]);
 
-Route::post('/' , [ContactController::class , 'feeds']);
+Route::post('/feeds' , [ContactController::class , 'feeds']);
