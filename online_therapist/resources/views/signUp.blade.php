@@ -47,10 +47,10 @@
 
             {{-- buttons --}}
             <div class="btns">
-                <button type="button" name="login-page" class="login-btn">
+                <button type="button" style="transform: scale(0.8)" name="login-page" class="login-btn">
                   <a  href="/login">Login</a>  
                 </button>
-                <button type="submit" class="sign-up-btn">Signup</button>
+                <button type="submit" style="transform: scale(1.2)" class="sign-up-btn">Signup</button>
             </div>
 
 

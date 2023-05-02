@@ -2,7 +2,6 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-
 }
 
 .rightPart {
@@ -78,7 +77,6 @@
     color: #fff;
 }
 
-
 .con {
     display: flex;
     align-items: center;
@@ -86,20 +84,18 @@
     gap: 40px;
     padding-top: 100px;
     margin-top: 85px;
-
 }
 
 @media (max-width: 640px) {
-    .con{
+    .con {
         flex-direction: column-reverse;
         text-align: center;
         overflow-x: hidden;
         margin-top: 0px;
-
     }
-    .img{
+    .img {
         width: 340px;
-        min-height: 320px;  
+        min-height: 320px;
         margin-bottom: 2rem;
     }
     .form {
@@ -113,7 +109,7 @@
         align-items: center;
         justify-content: center;
         gap: 20px;
-       padding: 30px 10px;
+        padding: 30px 10px;
     }
     .btns {
         display: flex;
