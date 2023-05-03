@@ -4,8 +4,8 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 110px;
 }
-
 
 .post-t {
     font-size: 35px;
@@ -85,8 +85,8 @@
 }
 
 @media (max-width: 640px) {
-    .img{
-        width:20rem;
+    .img {
+        width: 20rem;
     }
     .post-form {
         margin-bottom: 5rem;
@@ -94,35 +94,30 @@
     .post-t {
         font-size: 25px;
     }
-    
+
     .post-con {
         padding: 10px 100px 20px 100px;
         display: flex;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-
     }
-    
-   
-    
+
     .post-span {
         font-size: 25px;
         margin-bottom: 10px;
     }
-    
+
     .post-title {
         padding: 20px 25px;
         width: 330px;
-
     }
-    
+
     .post-blog {
         padding: 20px 25px;
         width: 330px;
-    
     }
-    
+
     .post-btn {
         padding: 10px 40px;
         height: 56px;
@@ -137,13 +132,12 @@
     .post-img {
         padding: 20px 25px;
         width: 330px;
-     
     }
-    
+
     .img-update {
         height: 200px;
         object-fit: cover;
-    
+
         margin-top: 20px;
         width: 550px;
         border-radius: 20px;
