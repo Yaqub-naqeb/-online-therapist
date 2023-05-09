@@ -12,13 +12,13 @@
     <div class="profile-text__con">
         <h1 class="profile-title">Profile info</h1>
     <div class="con-text">
-        <span>Username</span>
-        <h3 class="username">{{$user->name}}</h3>
+        <h3 >Username: </h3>
+        <span class="username">{{$user->name}}</span>
     </div>
       
     <div class="con-text">
-        <span>Email</span>
-        <h3 class="email">{{$user->email}}</h3>
+        <h3 >Email: </h3>
+        <span class="email">{{$user->email}}</span>
     </div>
 
        
